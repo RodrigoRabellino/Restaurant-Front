@@ -44,6 +44,7 @@ const RestaurantCard = ({ restaurant, add: address }) => {
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
+    maxWidth: "25%",
     margin: 4,
     background: "#3DDBC1"
   },
