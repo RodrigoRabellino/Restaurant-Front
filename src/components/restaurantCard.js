@@ -14,7 +14,7 @@ const RestaurantCard = ({ restaurant, add: address }) => {
   return (
     <Card className={classes.root} variant="elevation" elevation={4}>
       <CardContent>
-        <Typography className={classes.title} variant="h4" >
+        <Typography className={classes.title} variant="h4">
           {restaurant.name}
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
@@ -23,10 +23,12 @@ const RestaurantCard = ({ restaurant, add: address }) => {
         <Typography variant="h6">Address: {address}</Typography>
       </CardContent>
       <CardActions className={classes.buttonConainer}>
-      <Link to={"/restaurants/"+restaurant._id} className="btn btn-primary col-lg-5 mx-1 mb-1">
-                    View Reviews
-                  </Link>
-        
+        <Link
+          to={"/restaurants/" + restaurant._id}
+          className="btn btn-primary col-lg-5 mx-1 mb-1"
+        >
+          View Reviews
+        </Link>
 
         <Button
           variant="contained"
@@ -46,7 +48,7 @@ const useStyles = makeStyles({
     minWidth: 275,
     maxWidth: "25%",
     margin: 4,
-    background: "#3DDBC1"
+    background: "#3DDBC1",
   },
   bullet: {
     display: "inline-block",
@@ -57,7 +59,7 @@ const useStyles = makeStyles({
     textAlign: "center",
   },
   pos: {
-    marginTop:12,
+    marginTop: 12,
     marginBottom: 12,
   },
   buttonConainer: {

@@ -12,6 +12,7 @@ const RestaurantsList = (props) => {
   const [cuisines, setCuosines] = useState(["All Cuosines"]);
 
   useEffect(() => {
+    
     retrieveRestaurants();
     retriveCuosines();
   }, []);
